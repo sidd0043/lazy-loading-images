@@ -10,7 +10,7 @@
 <body>
 
   <div class="grid">
-    {% for img in site.data.images limit:2 %}
+    {% for img in site.data.images %}
       <div class="critical-img unit xs-1 m-1-2">
         <div class="embed embed-16by9">
           <img class="embed-item" src="images/{{img}}" alt="">
@@ -22,6 +22,8 @@
       <div class="embed embed-16by9">
         <img class="embed-item" src="images/{{img}}" alt="">
         <noscript>
+          <img class="embed-item" src="images/{{img}}" alt="">
+        </noscript>
       </div>
     </div>
 
@@ -33,7 +35,7 @@
         </div>
     </div>
     {% endfor %}
-  </div>
+  </d iv>
 
   <script>{%include_relative js/image-loader.js %}</script>
 </body>
